@@ -1,10 +1,6 @@
 # FALCON-Net-Feature-Aggregation-of-Local-Patterns-for-AI-Generated-Image-Detection
 
-# FALCON-Net: Feature Aggregation for Localized Context and Noise Network
 
-[![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-[![Python](https://img.shields.io/badge/Python-3.7+-blue.svg)](https://www.python.org/)
-[![PyTorch](https://img.shields.io/badge/PyTorch-1.8+-red.svg)](https://pytorch.org/)
 
 ## 📖 Abstract
 
@@ -66,121 +62,12 @@ FALCON-Net processes input images through two parallel feature extraction branch
 
 ```bash
 # Clone the repository
-git clone https://github.com/your-username/FALCON-Net.git
+git clone https://github.com/humiaomiaohaha/FALCON-Net-Feature-Aggregation-of-Local-Patterns-for-AI-Generated-Image-Detection.git
 cd FALCON-Net
 
 # Install dependencies
 pip install -r requirements.txt
 ```
 
-### Usage
 
-```python
-import torch
-from falcon_net import FALCONNet
 
-# Initialize model
-model = FALCONNet()
-
-# Load pre-trained weights
-model.load_state_dict(torch.load('checkpoints/falcon_net.pth'))
-
-# Set to evaluation mode
-model.eval()
-
-# Process image
-with torch.no_grad():
-    prediction = model(image)
-    is_fake = prediction.argmax().item() == 1
-```
-
-## 📊 Performance
-
-![Generalization Performance](assets/generalization_univfd_ap.png)
-
-*Generalization performance comparison showing FALCON-Net's ability to detect images from unseen generative models.*
-
-FALCON-Net achieves state-of-the-art performance in detecting AI-generated images across various datasets and generative models, demonstrating:
-
-- High detection accuracy on known generative models
-- Strong generalization to unseen generative models
-- Robustness against post-processing operations
-- Efficient inference speed
-
-## 📁 Project Structure
-
-```
-FALCON-Net/
-├── README.md
-├── LICENSE
-├── assets/
-│   ├── overview.png          # Model architecture diagram
-│   └── generalization_univfd_ap.png
-├── src/
-│   ├── models/              # Model implementations
-│   ├── modules/             # INP and LVP modules
-│   ├── utils/               # Utility functions
-│   └── train.py             # Training script
-├── checkpoints/             # Pre-trained models
-├── data/                    # Dataset configurations
-├── requirements.txt          # Python dependencies
-└── configs/                 # Configuration files
-```
-
-## 🔬 Research Details
-
-### Technical Contributions
-
-1. **Novel Feature Extraction**: Introduces complementary INP and LVP modules for comprehensive forensic analysis
-2. **Frequency Domain Analysis**: Leverages FFT-based noise pattern isolation for sensor fingerprint detection
-3. **Local Pixel Modeling**: Captures unnatural regularities through directional pixel intensity analysis
-4. **Robust Architecture**: Pruned ResNet backbone ensures efficient and effective feature processing
-
-### Applications
-
-- **Content Authenticity Verification**: Detect AI-generated images in social media and news
-- **Forensic Analysis**: Investigate image origins and manipulation
-- **Quality Assessment**: Evaluate generative model outputs
-- **Security Systems**: Integrate into content moderation pipelines
-
-## 📚 Citation
-
-If you find this work useful for your research, please cite our paper:
-
-```bibtex
-@article{falcon_net_2024,
-  title={FALCON-Net: Feature Aggregation for Localized Context and Noise Network for AI-Generated Image Detection},
-  author={Your Name and Co-authors},
-  journal={Conference/Journal Name},
-  year={2024}
-}
-```
-
-## 🤝 Contributing
-
-We welcome contributions to improve FALCON-Net! Please feel free to:
-
-- Submit issues and feature requests
-- Contribute code improvements
-- Share experimental results
-- Suggest architectural enhancements
-
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 🙏 Acknowledgments
-
-We thank the research community for their valuable feedback and the open-source community for providing excellent tools and frameworks that made this research possible.
-
-## 📞 Contact
-
-For questions, suggestions, or collaborations, please contact:
-
-- **Email**: your.email@institution.edu
-- **Project Page**: [GitHub Repository](https://github.com/your-username/FALCON-Net)
-- **Paper**: [arXiv/Conference Link]
-
----
-
-**Note**: This is a research implementation. For production use, additional testing and optimization may be required.
