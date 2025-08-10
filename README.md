@@ -36,10 +36,6 @@ FALCON-Net processes input images through two parallel feature extraction branch
 - **Feature Enhancement**: Amplifies high-frequency features for better detection
 - **IFFT Reconstruction**: Converts enhanced frequency features back to spatial domain
 
-### 3. **Feature Fusion and Classification**
-- **Concatenation**: Combines LVP and INP feature maps
-- **Pruned ResNet**: Deep neural network with residual connections for feature processing
-- **Binary Classification**: Softmax output distinguishing between "REAL" and "FAKE" images
 
 ## ✨ Key Features
 
@@ -53,7 +49,7 @@ FALCON-Net processes input images through two parallel feature extraction branch
 
 ### Prerequisites
 
-- Python 3.7+
+- Python 3.9+
 - PyTorch 1.8+
 - CUDA (for GPU acceleration)
 - Other dependencies (see requirements.txt)
