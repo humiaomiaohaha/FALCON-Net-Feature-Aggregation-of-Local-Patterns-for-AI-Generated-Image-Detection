@@ -19,7 +19,7 @@ Extensive experimental results show that FALCON-Net achieves the state-of-the-ar
 
 ## 🏗️ Architecture Overview
 
-![FALCON-Net Architecture](assets/overview.png)
+![FALCON-Net Architecture](ldr_net.jpg)
 
 *FALCON-Net Architecture: Dual-branch feature extraction with INP (Intrinsic Noise Pattern) and LVP (Local Variation Pattern) modules, followed by feature fusion and classification through a pruned ResNet backbone.*
 
