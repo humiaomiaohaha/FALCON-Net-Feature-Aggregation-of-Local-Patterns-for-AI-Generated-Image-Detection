@@ -1,0 +1,1 @@
+# FALCON-Net-Feature-Aggregation-of-Local-Patterns-for-AI-Generated-Image-Detection
